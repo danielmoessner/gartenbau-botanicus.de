@@ -60,11 +60,11 @@ Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zug
 möglich.
 #### Hinweis zur verantwortlichen Stelle
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:\
-Green Clean\
-Marktstraße 4\
-25764 Wesselburen\
-Telefon: 0172 9229982\
-E-Mail: info@greencleanteam.de\
+Toni Gartenbau\
+Mittagstraße 28c\
+87527 Sonthofen\
+Telefon: 0177 4444487\
+E-Mail: info@website.dee\
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über
 die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.)
 entscheidet.

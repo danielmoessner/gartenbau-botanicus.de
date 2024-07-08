@@ -1,7 +1,7 @@
 {
-  "name": "teamgreenclean.de",
+  "name": "website.de",
   "version": "0.0.0",
-  "description": "teamgreenclean.de website.",
+  "description": "website.de website.",
   "author": "danielmoessner",
   "scripts": {
     "dev": "astro dev",

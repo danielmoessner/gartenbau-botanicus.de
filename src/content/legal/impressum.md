@@ -6,17 +6,17 @@ date: 2024-06-21
 ---
 
 
-Green Clean\
-Marktstraße 4\
-25764 Wesselburen
+Toni Gartenbau\
+Mittagstraße 28c\
+87527 Sonthofen
 
 Vertretungsberechtigte/r Geschäftsführer/in:\
 Martyna Maria Ostropolska
 
 ## Kontakt
-Telefon: 0172 9229982\
+Telefon: 0177 4444487\
 Telefax: -\
-E-Mail: info@greencleanteam.de
+E-Mail: info@website.dee
 
 ## Umsatzsteueridentifikationsnummer
 USt.-ID-Nr.: DE11636007446 

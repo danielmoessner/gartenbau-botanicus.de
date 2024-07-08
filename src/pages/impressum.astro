@@ -9,6 +9,11 @@ if (!post) throw Error("Impressum nicht gefunden.");
 const { title, meta_title, description } = post.data;
 ---
 
-<Base title={title} meta_title={meta_title} description={description} navbg="">
+<Base
+  title={title}
+  meta_title={meta_title}
+  description={description}
+  navbg="bg-primary"
+>
   <PostSingle post={post} />
 </Base>

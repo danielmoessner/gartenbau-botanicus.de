@@ -1,20 +1,20 @@
 {
   "main": [
     {
-      "name": "Aufgabenbereiche",
-      "url": "/#aufgabenbereiche"
+      "name": "Über uns",
+      "url": "/#ueber-uns"
     },
     {
-      "name": "Einsatzgebiete",
-      "url": "/#vision-und-ziele"
+      "name": "Gartenpflege",
+      "url": "/#leistungen"
     },
     {
-      "name": "Kundenbewertungen",
-      "url": "/#kundenbewertungen"
+      "name": "Lanschaftsbau",
+      "url": "/#leistungen"
     },
     {
-      "name": "Über mich",
-      "url": "/#ueber-mich"
+      "name": "Kontakt",
+      "url": "/#kontakt"
     }
   ],
   "footer": [

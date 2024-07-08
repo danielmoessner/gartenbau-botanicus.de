@@ -64,7 +64,7 @@ const { navbg = "bg-transparent" } = Astro.props;
           <li class="nav-item">
             <a
               href={menu.url}
-              class={`p-3 text-emerald-900 transition hover:text-opacity-80 tracking-wide flex items-center auto-close-nav ${
+              class={`p-3 text-white transition hover:text-opacity-80 tracking-wide flex items-center auto-close-nav ${
                 (pathname === `${menu.url}/` || pathname === menu.url) &&
                 "active"
               }`}
@@ -75,14 +75,14 @@ const { navbg = "bg-transparent" } = Astro.props;
         ))
       }
     </ul>
-    <div>
+    <!-- <div>
       <a
         href="#kontakt"
-        class="px-5 py-2.5 font-medium tracking-wider text-white uppercase transition bg-emerald-800 border border-emerald-900 hover:text-emerald-900 hover:bg-transparent hover:font-bold md:hover:font-medium auto-close-nav"
+        class="px-5 py-2.5 font-medium tracking-wider text-white uppercase transition bg-primary border border-primary hover:text-primary hover:bg-transparent hover:font-bold md:hover:font-medium auto-close-nav"
       >
         Kontakt
       </a>
-    </div>
+    </div> -->
   </nav>
 </header>
 
