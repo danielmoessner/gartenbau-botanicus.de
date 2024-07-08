@@ -1,0 +1,30 @@
+{
+  "main": [
+    {
+      "name": "Aufgabenbereiche",
+      "url": "/#aufgabenbereiche"
+    },
+    {
+      "name": "Einsatzgebiete",
+      "url": "/#vision-und-ziele"
+    },
+    {
+      "name": "Kundenbewertungen",
+      "url": "/#kundenbewertungen"
+    },
+    {
+      "name": "Über mich",
+      "url": "/#ueber-mich"
+    }
+  ],
+  "footer": [
+    {
+      "name": "Impressum",
+      "url": "/impressum"
+    },
+    {
+      "name": "Datenschutz",
+      "url": "/datenschutz"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+---
+
+---
+
+<script>
+  window.slider = function () {
+    return {
+      numberOfSlides: 3,
+      slidesArray: [],
+      activeSlide: 0,
+      previousSlide: 0,
+      auto: true,
+      setup() {
+        this.slidesArray = Array.from(Array(this.numberOfSlides).keys());
+        setTimeout(() => this.autoPlay(), 5000);
+      },
+      autoPlay() {
+        if (this.auto) {
+          this.next();
+          setTimeout(() => this.autoPlay(), 5000);
+        }
+      },
+      next() {
+        if (this.activeSlide === this.slidesArray.length - 1) {
+          this.previousSlide = -1;
+          this.activeSlide = 0;
+        } else {
+          this.previousSlide = this.activeSlide;
+          this.activeSlide = this.activeSlide + 1;
+        }
+      },
+      previous() {
+        if (this.activeSlide === 0) {
+          this.previousSlide = 999;
+          this.activeSlide = this.slidesArray.length - 1;
+        } else {
+          this.previousSlide = this.activeSlide;
+          this.activeSlide = this.activeSlide - 1;
+        }
+      },
+      set(slideNumber) {
+        this.previousSlide = this.activeSlide;
+        this.activeSlide = slideNumber;
+      },
+      transitions(state) {
+        const rightToLeft = this.activeSlide > this.previousSlide;
+        switch (state) {
+          case "enter":
+            return "transition duration-1000 transform";
+          case "enter-start":
+            return `opacity-0 ${rightToLeft ? "translate-x-full" : "-translate-x-full"}`;
+          case "enter-end":
+            return `opacity-100 ${rightToLeft ? "translate-x-0" : "translate-x-0"}`;
+          case "leave":
+            return "transition duration-1000 transform absolute";
+          case "leave-start":
+            return `opacity-100 ${rightToLeft ? "translate-x-0" : "translate-x-0"}`;
+          case "leave-end":
+            return `opacity-0 ${rightToLeft ? "-translate-x-full" : "translate-x-full"}`;
+        }
+      },
+    };
+  };
+</script>
+
+<div class="max-w-lg mx-auto">
+  <div class="relative flex" x-data="slider()" x-init="setup()">
+    <!-- Previous Arrow -->
+    <div
+      class="absolute left-0 z-30 flex-col hidden h-full pr-2 text-gray-600 transform -translate-x-full md:flex"
+    >
+      <button
+        class="h-full p-2 focus:outline-none"
+        x-on:click="previous(); auto = false;"
+      >
+        <svg
+          class="w-8 h-8 mb-8"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"></path>
+          <span class="sr-only">Zurück</span>
+        </svg>
+      </button>
+    </div>
+    <div class="flex flex-col flex-1">
+      <div class="relative flex flex-row">
+        <!-- Slides -->
+        <div
+          :x-transition:enter="transitions('enter')"
+          :x-transition:enter-start="transitions('enter-start')"
+          :x-transition:enter-end="transitions('enter-end')"
+          :x-transition:leave="transitions('leave')"
+          :x-transition:leave-start="transitions('leave-start')"
+          :x-transition:leave-end="transitions('leave-end')"
+          x-show="activeSlide === 0"
+          class="min-w-full shadow-lg rounded-2xl"
+        >
+          <div class="overflow-x-hidden overflow-y-sroll">
+            <div
+              class="flex flex-col pt-4 pb-4 pl-4 pr-5 overflow-hidden bg-blue-600 rounded-2xl"
+            >
+              <div class="flex-1">
+                <div class="mt-3"></div>
+              </div>
+              <div class="grid grid-cols-1 gap-4 mt-6 lg:grid-cols-2"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          :x-transition:enter="transitions('enter')"
+          :x-transition:enter-start="transitions('enter-start')"
+          :x-transition:enter-end="transitions('enter-end')"
+          :x-transition:leave="transitions('leave')"
+          :x-transition:leave-start="transitions('leave-start')"
+          :x-transition:leave-end="transitions('leave-end')"
+          x-show="activeSlide === 1"
+          class="min-w-full shadow-lg rounded-2xl"
+        >
+          <div class="overflow-x-hidden overflow-y-sroll">
+            <div
+              class="flex flex-col pt-4 pb-4 pl-4 pr-5 overflow-hidden bg-red-600 rounded-2xl"
+            >
+              <div class="flex-1">
+                <div class="mt-3"></div>
+              </div>
+              <div class="grid grid-cols-1 gap-4 mt-6 lg:grid-cols-2"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          :x-transition:enter="transitions('enter')"
+          :x-transition:enter-start="transitions('enter-start')"
+          :x-transition:enter-end="transitions('enter-end')"
+          :x-transition:leave="transitions('leave')"
+          :x-transition:leave-start="transitions('leave-start')"
+          :x-transition:leave-end="transitions('leave-end')"
+          x-show="activeSlide === 2"
+          class="min-w-full shadow-lg rounded-2xl"
+        >
+          <div class="overflow-x-hidden overflow-y-sroll">
+            <div
+              class="flex flex-col pt-4 pb-4 pl-4 pr-5 overflow-hidden bg-emerald-600 rounded-2xl"
+            >
+              <div class="flex-1">
+                <div class="mt-3"></div>
+              </div>
+              <div class="grid grid-cols-1 gap-4 mt-6 lg:grid-cols-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Buttons -->
+      <div class="flex items-center justify-center w-full px-4">
+        <template x-for="slide in slidesArray" :key="slide">
+          <button
+            class="mt-2 py-2 px-1.5 focus:outline-none"
+            x-on:click="set(slide); auto = false;"
+          >
+            <div
+              class="w-8 h-1.5 overflow-hidden transition-colors duration-200 ease-out"
+              :class="{'bg-blue-500': activeSlide === slide, 'bg-gray-300': activeSlide !== slide}"
+            >
+              <span class="sr-only">Auswählen</span>
+            </div>
+          </button>
+        </template>
+      </div>
+    </div>
+    <!-- Next Arrow -->
+    <div
+      class="absolute right-0 z-30 flex-col hidden h-full pl-2 text-gray-600 transform translate-x-full md:flex"
+    >
+      <button
+        class="h-full p-2 focus:outline-none"
+        x-on:click="next(); auto = false;"
+      >
+        <svg
+          class="w-8 h-8 mb-8"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span class="sr-only">Weiter</span>
+      </button>
+    </div>
+  </div>
+</div>

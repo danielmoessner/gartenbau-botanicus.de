@@ -1,0 +1,14 @@
+---
+import Base from "@/layouts/Base.astro";
+import PostSingle from "@/components/Post.astro";
+import { getEntry } from "astro:content";
+
+const post = await getEntry("legal", "datenschutz");
+if (!post) throw Error("Datenschutz nicht gefunden.");
+
+const { title, meta_title, description } = post.data;
+---
+
+<Base title={title} meta_title={meta_title} description={description} navbg="">
+  <PostSingle post={post} />
+</Base>

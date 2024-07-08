@@ -1,0 +1,1 @@
+scp -r ./dist/* user@domain@ssh.strato.de:/teamgreenclean.de/

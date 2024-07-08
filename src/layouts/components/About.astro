@@ -1,0 +1,106 @@
+---
+import Heading from "./Heading.astro";
+import image1 from "@/images/person/header.jpg";
+import image2 from "@/images/person/network.jpg";
+import { Image } from "astro:assets";
+---
+
+<section class="bg-[#e7e7e7]" id="ueber-mich">
+  <div class="container pt-16 pb-24 md:pb-32 md:pt-36">
+    <div class="grid gap-8 md:grid-cols-2">
+      <div>
+        <Image class="rounded shadow-sm" src={image1} width={418 * 2} alt="" />
+      </div>
+      <div>
+        <Heading title="Mein Werdegang" pre="Über mich" />
+        <p class="mt-6">
+          Ich bin geboren am 24. Mai 1992 in Friedrichroda. Von meiner
+          Konfession bin ich Christlich-Evangelisch. Ich bin verheiratet und
+          wohne in Gefell. Seit 2016 bin ich Offizier bei der Deutschen
+          Luftwaffe.
+        </p>
+        <ul class="pl-6 mt-4 space-y-2 list-disc">
+          <li>
+            Seit 2020 Offizier beim Flugabwehrraketendienst der Luftwaffe.
+          </li>
+          <li>
+            2019 Ausbildung zum Feuerleitoffizier am Waffensystem PATRIOT in
+            Texas/USA.
+          </li>
+          <li>
+            2016-2018 Masterstudium mit Schwerpunkt Erwachsenenbildung,
+            Personalentwicklung und interkulturellem Konfliktmanagement.
+          </li>
+          <li>
+            2014-2016 Bachelorstudium der Bildungswissenschaften an der
+            Universität der Bundeswehr München.
+          </li>
+          <li>
+            2013 Offizierausbildung an der Offizierschule der Luftwaffe
+            Fürstenfeldbruck.
+          </li>
+          <li>2012 Abitur am Sportgymnasium Jena.</li>
+        </ul>
+        <div class="mt-8">
+          <h3
+            class="inline p-0.5 px-2 mt-4 text-xl leading-tight bg-white box-decoration-clone text-light bg-clip-border"
+          >
+            Leidenschaften
+          </h3>
+          <p class="mt-3">Bin ich nicht am arbeiten, findet man mich hier:</p>
+          <ul class="pl-6 space-y-0.5 mt-1 list-disc">
+            <li>
+              Passionierter Jungjäger und Mitglied in der Jägerschaft Lobenstein
+            </li>
+            <li>
+              Aktives Mitglied in der Einsatzabteilung der Freiwilligen
+              Feuerwehr Gefell sowie Mitglied im Feuerwehrverein Gefell e.V.
+            </li>
+            <li>Naturliebhaber. Outdoorsportler (Joggen/Mountainbiken)</li>
+            <li>Hobby-Landwirt</li>
+            <li>
+              Motorflugbegeistert – Privatpilot für einmotorige
+              Propellermaschinen
+            </li>
+            <li>Angeln in meiner Freizeit</li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <Heading title="Meine politische Arbeit" pre="" />
+        <div class="space-y-1">
+          <p class="mt-6">
+            Ich habe mich schon immer für zwischenmenschliche Diskurse und
+            sachliche Debatten stark gemacht, um positive Veränderungen
+            herbeizuführen.
+          </p>
+          <p>
+            Bereits in der Schule war ich als Schülersprecher aktiv und
+            unternahm alles, um die Interessen der Schülerschaft konstruktiv
+            voranzutreiben.
+          </p>
+          <p>
+            Seit 2021 bin ich Mitglied der CDU-Saale-Orla und arbeite proaktiv
+            für die Belange unseres schönen Landkreises.
+          </p>
+          <p>
+            Neben meiner Arbeit in verschiedenen Vereinen in der Region bin ich
+            seit 2023 als stellvertretender Kreisvorsitzender der Jungen Union
+            Saale-Orla aktiv. Dabei versuche ich den Jugendlichen verschiedene
+            politische Weiterbildungsangebote zu machen und die junge
+            Gemeinschaft in unserer Heimat zu stärken.
+          </p>
+        </div>
+      </div>
+      <div>
+        <Image
+          class="mt-8 rounded shadow-sm"
+          src={image2}
+          width={418 * 2}
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</section>

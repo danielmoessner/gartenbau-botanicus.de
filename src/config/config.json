@@ -1,0 +1,15 @@
+{
+  "site": {
+    "title": "GreenClean",
+    "base_url": "https://teamgreenclean.de",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "favicon.png",
+    "logo": "favicon.png"
+  },
+  "metadata": {
+    "meta_author": "GreenClean",
+    "meta_image": "/images/contact.jpg",
+    "meta_description": "Der Saale-Orla-Kreis kann mehr! Als ihr künftiges Kreistagsmitglied will ich diesen wunderschönen Landkreis mit vorwärtsentwickeln. Kreistagswahl am 26. Mai 2024: Liste 3 Listenplatz 25: Alle drei Stimmen für Green Clean"
+  }
+}

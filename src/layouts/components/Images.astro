@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+import image0 from "@/images/person/slideshow.jpg";
+import image1 from "@/images/person/feuerwehr.jpg";
+import image2 from "@/images/person/bike.jpg";
+import image3 from "@/images/person/jaeger.jpg";
+import image4 from "@/images/person/traktor.jpg";
+import image5 from "@/images/person/kuh.jpg";
+import type { ImageMetadata } from "astro";
+
+const items: [ImageMetadata, string][] = [
+  [
+    image0,
+    "Gutes tun! Meine monatliche Aufwandsentschädigung wird einem wohltätigen Zweck im Landkreis gespendet!",
+  ],
+  [image1, "Volle Rückendeckung für das Ehrenamt!"],
+  [image2, "Startklar für den Kreistag!"],
+  [image3, "Jäger schützen unsere Natur!"],
+  [
+    image4,
+    "Einer von Euch! Unsere Landwirte respektieren und nachhaltig fördern!",
+  ],
+  [image5, "Bauern denken nicht in Wahlperioden, sondern in Generationen!"],
+];
+---
+
+<section>
+  <div
+    class="hidden grid-cols-1 xl:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6"
+  >
+    {
+      items.map(([img, text], index) => (
+        <div class="flex flex-col w-full bg-secondary">
+          <Image src={img} alt="Stever Werner" class="w-full max-w-full" />
+          <div class="flex items-center justify-center h-full px-3 py-1 font-bold text-center font-heading bg-secondary text-dark">
+            <div>{text}</div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

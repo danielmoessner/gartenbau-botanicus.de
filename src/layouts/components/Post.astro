@@ -1,0 +1,40 @@
+---
+import dateFormat from "@/lib/utils/dateFormat";
+
+const { post } = Astro.props;
+
+const { Content } = await post.render();
+const { title, date } = post.data;
+---
+
+<section class="min-h-[calc(100vh_-_130px)] pt-32 section">
+  <div class="container">
+    <div class="justify-center row">
+      <div class="lg:col-10">
+        <h1 set:html={title} class="mb-4 h2" />
+        <ul class="mb-4">
+          <li class="inline-block mr-4">
+            <svg
+              class="inline-block w-5 h-5 mr-2 -mt-1 text-gray-600"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            {dateFormat(date)}
+          </li>
+        </ul>
+        <div class="mb-10 prose content">
+          <Content />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
