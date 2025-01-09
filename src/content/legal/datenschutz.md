@@ -2,7 +2,7 @@
 title: "Datenschutz"
 meta_title: "Datenschutz"
 description: ""
-date: 2024-04-09
+date: 2025-01-09
 ---
 
 
@@ -61,10 +61,10 @@ möglich.
 #### Hinweis zur verantwortlichen Stelle
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:\
 Toni Gartenbau\
-Mittagstraße 28c\
-87527 Sonthofen\
-Telefon: 0177 4444487\
-E-Mail: info@website.dee\
+Eversbushstr 68\
+80999 München Allach\
+Telefon: 0171 8611988\
+E-Mail: info@gartenbau-botanicus.de\
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über
 die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.)
 entscheidet.

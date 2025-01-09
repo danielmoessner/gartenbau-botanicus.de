@@ -2,26 +2,26 @@
 title: "Impressum"
 meta_title: "Impressum"
 description: ""
-date: 2024-06-21
+date: 2025-01-09
 ---
 
 
 Toni Gartenbau\
-Mittagstraße 28c\
-87527 Sonthofen
+Eversbushstr 68\
+80999 München Allach
 
 Vertretungsberechtigte/r Geschäftsführer/in:\
-Martyna Maria Ostropolska
+Rene Streitwein
 
 ## Kontakt
-Telefon: 0177 4444487\
+Telefon: 0171 8611988\
 Telefax: -\
-E-Mail: info@website.dee
+E-Mail: info@gartenbau-botanicus.de
 
 ## Umsatzsteueridentifikationsnummer
-USt.-ID-Nr.: DE11636007446 
+USt.-ID-Nr.: Folgt 
 
 ## Weiteres
 
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
-Martyna Maria Ostropolska 
+Rene Streitwein 
