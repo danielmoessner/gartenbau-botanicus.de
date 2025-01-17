@@ -6,7 +6,7 @@ date: 2025-01-09
 ---
 
 
-Toni Gartenbau\
+Gartenbau Botanicus\
 Eversbushstr 68\
 80999 München Allach
 
@@ -19,7 +19,7 @@ Telefax: -\
 E-Mail: info@gartenbau-botanicus.de
 
 ## Umsatzsteueridentifikationsnummer
-USt.-ID-Nr.: Folgt 
+USt.-ID-Nr.: DE233327517 
 
 ## Weiteres
 

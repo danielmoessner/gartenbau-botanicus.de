@@ -60,7 +60,7 @@ Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zug
 möglich.
 #### Hinweis zur verantwortlichen Stelle
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:\
-Toni Gartenbau\
+Gartenbau Botanicus\
 Eversbushstr 68\
 80999 München Allach\
 Telefon: 0171 8611988\

@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Toni Gartenbau",
+    "title": "Gartenbau Botanicus",
     "base_url": "https://website.de",
     "base_path": "/",
     "trailing_slash": false,
@@ -8,8 +8,8 @@
     "logo": "favicon.png"
   },
   "metadata": {
-    "meta_author": "Toni Gartenbau",
+    "meta_author": "Gartenbau Botanicus",
     "meta_image": "/images/contact.jpg",
-    "meta_description": "Der Saale-Orla-Kreis kann mehr! Als ihr künftiges Kreistagsmitglied will ich diesen wunderschönen Landkreis mit vorwärtsentwickeln. Kreistagswahl am 26. Mai 2024: Liste 3 Listenplatz 25: Alle drei Stimmen für Toni Gartenbau"
+    "meta_description": "Der Saale-Orla-Kreis kann mehr! Als ihr künftiges Kreistagsmitglied will ich diesen wunderschönen Landkreis mit vorwärtsentwickeln. Kreistagswahl am 26. Mai 2024: Liste 3 Listenplatz 25: Alle drei Stimmen für Gartenbau Botanicus"
   }
 }
