@@ -4,8 +4,8 @@
     "base_url": "https://website.de",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "favicon.png",
-    "logo": "favicon.png"
+    "favicon": "favicon/favicon.ico",
+    "logo": ""
   },
   "metadata": {
     "meta_author": "Gartenbau Botanicus",

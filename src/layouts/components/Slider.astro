@@ -33,7 +33,7 @@ const items: [ImageMetadata, string][] = [
   >
     <button
       @click="() => { active = active - 1; auto = false; if (active < 0) active = 5; }"
-      class="absolute top-0 bottom-0 left-0 z-30 h-20 px-4 my-auto text-white transition rounded-r bg-gray-900/20 hover:bg-gray-900/50"
+      class="absolute top-0 bottom-0 left-0 z-30 h-20 px-4 my-auto text-white transition rounded-r bg-stone-900/20 hover:bg-stone-900/50"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ const items: [ImageMetadata, string][] = [
     </button>
     <button
       @click="() => { active = (active + 1) % 6; auto = false; }"
-      class="absolute top-0 bottom-0 right-0 z-30 h-20 px-4 my-auto text-white transition rounded-l bg-gray-900/20 hover:bg-gray-900/50"
+      class="absolute top-0 bottom-0 right-0 z-30 h-20 px-4 my-auto text-white transition rounded-l bg-stone-900/20 hover:bg-stone-900/50"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

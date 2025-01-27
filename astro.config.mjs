@@ -10,12 +10,17 @@ export default defineConfig({
   site: config.site.base_url,
   base: config.site.base_path,
   trailingSlash: config.site.trailing_slash ? "always" : "never",
-  integrations: [sitemap(), tailwind({
-    config: {
-      applyBaseStyles: false
-    }
-  }), alpinejs()],
+  integrations: [
+    sitemap(),
+    tailwind({
+      config: {
+        applyBaseStyles: false,
+      },
+      nesting: true,
+    }),
+    alpinejs(),
+  ],
   server: {
-    port: 4705
-  }
+    port: 4705,
+  },
 });

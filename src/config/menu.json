@@ -1,6 +1,10 @@
 {
   "main": [
     {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/bota_nicus/"
+    },
+    {
       "name": "Über uns",
       "url": "/#ueber-uns"
     },

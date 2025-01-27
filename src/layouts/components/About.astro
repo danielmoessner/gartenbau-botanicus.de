@@ -1,33 +1,42 @@
 ---
-import Heading from "./Heading.astro";
-import image1 from "@/images/header.jpg";
+import image1 from "@/images/erfahrung.jpeg";
 // import image2 from "@/images/person/network.jpg";
 import { Image } from "astro:assets";
 import Button from "./Button.astro";
 ---
 
 <section class="" id="ueber-uns">
-  <div class="container pt-16 pb-24 md:pb-32 md:pt-24">
+  <div class="container pt-10 pb-24 md:pb-32 md:pt-24">
     <div class="grid gap-8 md:grid-cols-2">
       <div>
-        <h2 class="text-4xl font-bold text-primary">
+        <h2 class="mb-4 text-4xl font-bold text-primary">
           15 Jahre Erfahrung im Gartenbau
         </h2>
-        <p class="mt-8 text-lg text-primary">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolor
-          cupiditate quod eos architecto. Laboriosam ducimus reiciendis
-          blanditiis quae earum ut, nesciunt officia dolorum aut amet recusandae
-          deserunt autem natus. Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Aperiam itaque commodi quod ea voluptatibus
-          consectetur maiores nam voluptates qui, aspernatur voluptate iusto ut
-          ratione, beatae non libero, magnam a quibusdam.
-        </p>
+        <div class="text-lg text-primary">
+          <p class="">
+            Seit über 15 Jahren steht Gartenbau Botanicus für Qualität,
+            Leidenschaft und fachmännische Arbeit im Bereich Gartenpflege und
+            Landschaftsbau. Unser erfahrenes Team aus München hat sich darauf
+            spezialisiert, grüne Oasen zu schaffen und zu pflegen – mit Liebe
+            zum Detail und einem Auge für die besonderen Wünsche unserer Kunden.
+          </p>
+          <p class="mt-2">
+            Egal, ob Sie Ihren Garten neu gestalten, Ihr Grundstück für den
+            Frühling vorbereiten oder eine regelmäßige Pflege benötigen: Wir
+            sind Ihr verlässlicher Partner im gesamten Münchner Raum und den
+            umliegenden Gemeinden.
+          </p>
+          <p class="mt-2">
+            Setzen Sie auf unsere Expertise und genießen Sie einen Garten, der
+            Ihre Erwartungen übertrifft – das ganze Jahr über!
+          </p>
+        </div>
         <div class="mt-8 text-base [&>a]:inline-block">
           <Button />
         </div>
       </div>
-      <div>
-        <Image class="mt-8 shadow-sm" src={image1} width={418 * 2} alt="" />
+      <div class="pt-0 md:pt-8">
+        <Image class="shadow-sm" src={image1} width={418 * 2} alt="" />
       </div>
     </div>
   </div>

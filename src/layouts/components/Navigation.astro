@@ -27,11 +27,9 @@ const { navbg = "bg-transparent" } = Astro.props;
   });
 </script>
 
-<header
-  class=`absolute  top-0 left-0 right-0 z-30 header font-heading ${navbg}`
->
+<header class=`absolute top-0 left-0 right-0 z-30 header font-heading ${navbg}`>
   <nav
-    class="container relative flex flex-wrap items-center justify-between navbar"
+    class="container relative flex flex-wrap items-center justify-between py-2"
   >
     <!-- logo -->
     <div class="order-0">
@@ -41,7 +39,7 @@ const { navbg = "bg-transparent" } = Astro.props;
     <input id="nav-toggle" type="checkbox" class="hidden" />
     <label
       for="nav-toggle"
-      class="flex items-center order-3 cursor-pointer lg:hidden text-dark lg:order-1"
+      class="flex items-center text-white cursor-pointer lg:hidden lg:order-1"
     >
       <svg id="show-button" class="block h-6 fill-current" viewBox="0 0 20 20">
         <title>Menu Open</title>
@@ -57,7 +55,7 @@ const { navbg = "bg-transparent" } = Astro.props;
 
     <ul
       id="nav-menu"
-      class="hidden w-full lg:flex lg:w-auto lg:space-x-2 lg:pb-0 lg:items-center xl:space-x-8 bg-secondary lg:bg-transparent"
+      class="hidden w-full mt-2 lg:flex lg:w-auto lg:space-x-2 lg:pb-0 lg:items-center xl:space-x-8 bg-stone-700 lg:bg-transparent"
     >
       {
         main.map((menu) => (
@@ -68,6 +66,7 @@ const { navbg = "bg-transparent" } = Astro.props;
                 (pathname === `${menu.url}/` || pathname === menu.url) &&
                 "active"
               }`}
+              target={menu.url.startsWith("http") ? "_blank" : "_self"}
             >
               {menu.name}
             </a>
@@ -75,14 +74,6 @@ const { navbg = "bg-transparent" } = Astro.props;
         ))
       }
     </ul>
-    <!-- <div>
-      <a
-        href="#kontakt"
-        class="px-5 py-2.5 font-medium tracking-wider text-white uppercase transition bg-primary border border-primary hover:text-primary hover:bg-transparent hover:font-bold md:hover:font-medium auto-close-nav"
-      >
-        Kontakt
-      </a>
-    </div> -->
   </nav>
 </header>
 

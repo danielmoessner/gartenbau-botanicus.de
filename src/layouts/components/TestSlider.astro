@@ -67,7 +67,7 @@
   <div class="relative flex" x-data="slider()" x-init="setup()">
     <!-- Previous Arrow -->
     <div
-      class="absolute left-0 z-30 flex-col hidden h-full pr-2 text-gray-600 transform -translate-x-full md:flex"
+      class="absolute left-0 z-30 flex-col hidden h-full pr-2 text-stone-600 transform -translate-x-full md:flex"
     >
       <button
         class="h-full p-2 focus:outline-none"
@@ -165,7 +165,7 @@
           >
             <div
               class="w-8 h-1.5 overflow-hidden transition-colors duration-200 ease-out"
-              :class="{'bg-blue-500': activeSlide === slide, 'bg-gray-300': activeSlide !== slide}"
+              :class="{'bg-blue-500': activeSlide === slide, 'bg-stone-300': activeSlide !== slide}"
             >
               <span class="sr-only">Auswählen</span>
             </div>
@@ -175,7 +175,7 @@
     </div>
     <!-- Next Arrow -->
     <div
-      class="absolute right-0 z-30 flex-col hidden h-full pl-2 text-gray-600 transform translate-x-full md:flex"
+      class="absolute right-0 z-30 flex-col hidden h-full pl-2 text-stone-600 transform translate-x-full md:flex"
     >
       <button
         class="h-full p-2 focus:outline-none"

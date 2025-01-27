@@ -5,36 +5,50 @@ const services = [
   {
     title: "Gartenpflege",
     description:
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptates.",
-    image: "/images/gartenpflege.jpg",
+      "Unsere sorgfältige Gartenpflege sorgt dafür, dass Ihr Grün das ganze Jahr über in voller Pracht erstrahlt - individuell abgestimmt auf die Bedürfnisse Ihres Gartens.",
+    images: [
+      "/botanicus/gartenpflege.jpeg",
+      "/botanicus/gartenpflege2.jpeg",
+      "/botanicus/gartenpflege3.jpeg",
+      "/botanicus/gartenpflege4.jpeg",
+    ],
   },
   {
     title: "Landschaftsbau",
     description:
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptates.",
-    image: "/images/landschaftsbau.jpg",
+      "Mit kreativem Design und fachgerechter Ausführung verwandeln wir Ihre Außenbereiche in einzigartige Landschaften, die Ästhetik und Funktionalität vereinen.",
+    images: [
+      "/botanicus/landschaftsbau.jpeg",
+      "/botanicus/landschaftsbau2.jpeg",
+      "/botanicus/landschaftsbau3.jpeg",
+      "/botanicus/landschaftsbau4.jpeg",
+    ],
   },
 ];
 ---
 
-<section class="py-32 bg-secondary" id="leistungen">
+<section class="pt-12 pb-12 md:py-32 bg-secondary" id="leistungen">
   <div class="container">
-    <div class="flex justify-between">
+    <div class="flex items-center justify-between">
       <h2 class="text-4xl font-bold text-primary">Was wir anbieten</h2>
       <Button />
     </div>
-    <div class="grid grid-cols-2 gap-6 mt-8">
+    <div class="grid gap-6 mt-8 md:grid-cols-2">
       {
         services.map((s) => (
           <div class="bg-white">
-            <img
-              src={s.image}
-              alt={s.title}
-              class="object-cover aspect-[9/9]"
-            />
+            <div class="grid grid-cols-2">
+              {s.images?.map((image, i) => (
+                <img
+                  src={image}
+                  alt={s.title + " " + i}
+                  class="object-cover aspect-[9/9]"
+                />
+              ))}
+            </div>
             <div class="p-6">
               <h3 class="text-2xl font-bold text-primary">{s.title}</h3>
-              <p class="text-gray-600">{s.description}</p>
+              <p class="mt-2 text-stone-600">{s.description}</p>
             </div>
           </div>
         ))
