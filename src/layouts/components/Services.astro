@@ -21,7 +21,29 @@ const services = [
       "/botanicus/landschaftsbau.jpeg",
       "/botanicus/landschaftsbau2.jpeg",
       "/botanicus/landschaftsbau3.jpeg",
-      "/botanicus/landschaftsbau4.jpeg",
+      "/botanicus/landschaftsbau5.jpeg",
+    ],
+  },
+  {
+    title: "Dachrinne reinigen",
+    description:
+      "Eine regelmäßige Reinigung der Dachrinne verhindert Verstopfungen und Wasserschäden an Ihrem Gebäude. Unser professionelles Team sorgt dafür, dass Ihre Dachrinne stets frei von Laub und Schmutz bleibt.",
+    images: [
+      "/botanicus/landschaftsbau.jpeg",
+      "/botanicus/landschaftsbau2.jpeg",
+      "/botanicus/landschaftsbau3.jpeg",
+      "/botanicus/gartenpflege4.jpeg",
+    ],
+  },
+  {
+    title: "Regenwasser Zisternen",
+    description:
+      "Regenwasserzisternen sind eine nachhaltige Lösung zur Wasserspeicherung und -nutzung. Unser Team installiert fachgerecht Zisternen, die Ihnen helfen, Wasser zu sparen und die Umwelt zu schonen.",
+    images: [
+      "/botanicus/zisterne1.jpeg",
+      "/botanicus/zisterne2.jpeg",
+      "/botanicus/zisterne3.jpeg",
+      "/botanicus/zisterne4.jpeg",
     ],
   },
 ];
@@ -41,7 +63,7 @@ const services = [
               {s.images?.map((image, i) => (
                 <img
                   src={image}
-                  alt={s.title + " " + i}
+                  alt={s.title + " " + (i + 1)}
                   class="object-cover aspect-[9/9]"
                 />
               ))}
