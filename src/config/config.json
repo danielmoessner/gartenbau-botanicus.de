@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Gartenbau Botanicus",
-    "base_url": "https://website.de",
+    "base_url": "https://gartenbau-botanicus.de",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "favicon/favicon.ico",
@@ -9,7 +9,7 @@
   },
   "metadata": {
     "meta_author": "Gartenbau Botanicus",
-    "meta_image": "/images/contact.jpg",
-    "meta_description": "Der Saale-Orla-Kreis kann mehr! Als ihr künftiges Kreistagsmitglied will ich diesen wunderschönen Landkreis mit vorwärtsentwickeln. Kreistagswahl am 26. Mai 2024: Liste 3 Listenplatz 25: Alle drei Stimmen für Gartenbau Botanicus"
+    "meta_image": "/botanicus/header.jpeg",
+    "meta_description": "Ihr Garten braucht „neue Kleider“, Ihr Grundstück einen Frühjahrsputz oder ein großes Herbst-Aufräumen? Vielleicht sogar regelmäßige Pflege? Unser erfahrenes Team aus München hat sich darauf spezialisiert, grüne Oasen zu schaffen und zu pflegen - mit Liebe zum Detail und einem Auge für die besonderen Wünsche unserer Kunden."
   }
 }
